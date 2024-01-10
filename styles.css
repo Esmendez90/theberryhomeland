@@ -30,7 +30,7 @@
 #navbarNav {
   transition: all 1s ease-in-out 0s;
 }
-.navbar-nav{
+.navbar-nav {
   height: 100vh;
   text-align: center;
   transform: translate(0, 20%);
@@ -38,8 +38,6 @@
 .nav-item {
   font-size: 20px;
 }
-
-
 
 .background-img-item img {
   background-color: #cccccc;
@@ -99,11 +97,11 @@
   letter-spacing: 1.2px;
 }
 .data-container a img {
-    width: 65px;
-    margin-left: 10px;
-    margin-bottom: 1rem;
-    transition: width 0.2s;
-    transition-timing-function: ease-in-out;
+  width: 65px;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  transition: width 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .footer {
   background-color: #597959;
@@ -117,7 +115,7 @@
   color: white;
   text-decoration: none;
 }
-.footer ul a:hover{
+.footer ul a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -125,19 +123,86 @@
 /* abaca page */
 .heading-style-1 {
   color: grey;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-weight: bold;
   margin: 50px auto 0px;
 }
-.text-style-1{
+.text-style-1 {
   margin: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: grey;
   font-size: 21px;
 }
 /* breakpoints */
 
-@media only screen and (min-width: 412) {
-  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .carousel-inner-1 {
+    background-color: rgb(0 0 0 / 6%);
+  }
+  .background-img-item img {
+    margin: auto;
+  }
+  .about-container {
+    margin: 20px;
+    padding: 0 15px;
+  }
+  .text-style-1 {
+    font-size: 26px;
+  }
+  .nav-item {
+    font-size: 30px;
+  }
+  .snapshot-img {
+    width: 80% !important;
+    height: 400px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logo-text-1 {
+    font-size: 20px;
+  }
+  .logo-text-2,
+  .logo-text-3 {
+    font-size: 30px;
+  }
+  .seed-icon {
+    width: 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar-nav {
+    height: auto;
+    text-align: center;
+    transform: none;
+}
+.navbar-collapse {
+  flex-basis: 0;
+  flex-grow: 0;
+  align-items: right;
+}
+.navbar-nav > .nav-item:first-child {
+  margin-right: 20px;
+}
+.background-img-item img {
+  width: 100%;
+  height: 700px;
+}
+.heading-style-1, .footer h1 {
+  font-size: 50px;
+}
+.text-style-1 {
+  font-size: 33px;
+}
+.footer ul {
+  font-size: 24px;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  ...;
 }
