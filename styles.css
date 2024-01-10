@@ -1,61 +1,76 @@
 .bg-body-tertiary {
-    background-color: white !important;
+  background-color: white !important;
 }
-.logo-name-text{
-margin-bottom: 0;
-font-family:Georgia, 'Times New Roman', Times, serif;
-color: rgb(77 152 58);
+.logo-name-text {
+  margin-bottom: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(77 152 58);
 }
-.logo-text-1{
-    font-size: 10px;
+.logo-text-1 {
+  font-size: 10px;
 }
-.logo-text-2{
-    margin-left: 10px;
-    letter-spacing: 1px;
+.logo-text-2 {
+  margin-left: 10px;
+  letter-spacing: 1px;
 }
-.logo-text-3{
-    margin-left: 20px;
-    letter-spacing: 1px;
+.logo-text-3 {
+  margin-left: 20px;
+  letter-spacing: 1px;
 }
-.seed-icon{
-    margin-left:2px;
-    margin-bottom: 2.5px;
-    display:inline-flex;
-    width: 20px;
-    height: auto;
-    -webkit-transform: scaleX(-1);
+.seed-icon {
+  margin-left: 2px;
+  margin-bottom: 2.5px;
+  display: inline-flex;
+  width: 20px;
+  height: auto;
+  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-.carousel-item img {
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.background-img-item img {
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: none !important;
-}
+
 .intro-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  .intro-text {
-    display: block;
-    background-color: rgba(0,0, 0,0.09);
-    padding: 10px;
-  }
-  .intro-text h5 {
-    text-align: right;
-  }
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.09);
+  padding: 10px;
+  z-index: 1;
+}
+
+.intro-text h5 {
+  text-align: right;
+}
 .carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.snapshot-image {
+  width: 80%;
+  height: 60% !important;
+  margin: auto;
+}
+
+.snapshot-img {
+  width: 90%;
+  background-color: #cccccc;
+  height: 265px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
 }
