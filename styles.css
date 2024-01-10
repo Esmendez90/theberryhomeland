@@ -27,6 +27,19 @@
   transform: scaleX(-1);
 }
 
+#navbarNav {
+  transition: all 1s ease-in-out 0s;
+}
+.navbar-nav{
+  height: 100vh;
+  text-align: center;
+}
+.nav-item {
+  font-size: 20px;
+}
+
+
+
 .background-img-item img {
   background-color: #cccccc;
   height: 500px;
@@ -78,6 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
   margin-bottom: 0;
 }
 .data-container p {
@@ -92,4 +106,23 @@
 }
 .footer {
   background-color: #597959;
+  color: white;
+}
+.footer li {
+  list-style: none;
+  margin: 10px auto;
+}
+.footer ul a {
+  color: white;
+  text-decoration: none;
+}
+.footer ul a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* breakpoints */
+
+@media only screen and (min-width: 412) {
+  
 }
