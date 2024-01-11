@@ -137,11 +137,12 @@
 
 /* Gallery page */
 
-.gallery-item > img {
+.gallery-item > img, .gallery-item > video {
   display: block;
   margin: 15px auto;
  width: 80%;  
 } 
+
 
 .goTo-gallery-btn > p > a {
   text-decoration: none;
