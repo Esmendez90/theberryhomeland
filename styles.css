@@ -80,10 +80,10 @@
   width: 90% !important;
   background-color: #cccccc;
   height: 265px;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; */
   margin: auto;
 }
 .data-container {
@@ -134,6 +134,18 @@
   color: grey;
   font-size: 21px;
 }
+
+/* Gallery page */
+.gallery-item {
+  margin: 10px auto;
+
+}
+.gallery-item > img {
+  display: block;
+  width: 95%;
+  margin: auto;
+}
+
 /* breakpoints */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -171,6 +183,19 @@
   .seed-icon {
     width: 30px;
   }
+  .gallery-container {
+    text-align: center;
+  }
+  .gallery-item {
+    margin: 5px;
+    width: 45%;
+    display: inline-flex;
+}
+.gallery-item > img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -179,28 +204,61 @@
     height: auto;
     text-align: center;
     transform: none;
-}
-.navbar-collapse {
-  flex-basis: 0;
-  flex-grow: 0;
-  align-items: right;
-}
-.navbar-nav > .nav-item:first-child {
-  margin-right: 20px;
-}
-.background-img-item img {
-  width: 100%;
-  height: 700px;
-}
-.heading-style-1, .footer h1 {
-  font-size: 50px;
-}
-.text-style-1 {
-  font-size: 33px;
-}
-.footer ul {
-  font-size: 24px;
-}
+  }
+  .navbar-collapse {
+    flex-basis: 0;
+    flex-grow: 0;
+    align-items: right;
+  }
+  .navbar-nav > .nav-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .background-img-item img {
+    width: 100%;
+    height: 700px;
+  }
+  .intro-text {
+    font-size: 75px;
+    letter-spacing: 1.5px;
+  }
+  .heading-style-1,
+  .footer h1 {
+    font-size: 50px;
+  }
+  .text-style-1 {
+    font-size: 33px;
+  }
+  .snapshot-container > .carousel-inner > .carousel-item {
+    display: contents !important;
+    transition: none !important;
+  }
+  .snapshot-container > .carousel-inner {
+    text-align: center;
+  }
+
+  .goTo-gallery-btn > a {
+    text-decoration: none;
+  }
+  .goTo-gallery-btn > a > .text-style-1 {
+    width: fit-content;
+    background-color: #597959;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    border-bottom: solid 2px black;
+    border-right: solid 2px black;
+  }
+  .goTo-gallery-btn > a > .text-style-1:hover {
+    cursor: pointer;
+  }
+  .snapshot-img {
+    width: 45% !important;
+    margin: 10px;
+    display: inline-flex !important
+  }
+  .footer ul {
+    font-size: 24px;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
