@@ -273,6 +273,9 @@
     margin: 25px;
     width: 38%;
   }
+  .gallery-item > video {
+    width: 60%;
+  }
   .footer ul {
     font-size: 24px;
   }
