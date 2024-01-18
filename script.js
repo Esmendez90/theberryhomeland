@@ -1,15 +1,27 @@
 document.getElementById("goTo-gallery-btn").onclick = function () {
-        location.href = location.href + "/gallery.html";
+  location.href = location.href + "gallery.html";
 };
 
-// let el = document.getElementsByClassName("snapshot-inner-container")[0];
-// console.log(el);
-// function isInViewport(el) {
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+console.log(rect.top, rect.left)
+  return (
+    rect.top <= 800 &&
+    rect.left >= 0 &&
+    rect.bottom <= window.innerHeight &&
+    rect.right <= window.innerWidth
+  );
+}
 
-//     var rect = el.getBoundingClientRect();
-//     var html = document.documentElement;
-//     console.log(rect,html);
-//   }
+const elements = document.querySelectorAll(".snapshot-container");
+//console.log(elements);
 
-//   isInViewport();
-
+window.addEventListener("scroll", () => {
+  elements.forEach((element) => {
+    if (isInViewport(element)) {
+      element.classList.add("is-in-viewport");
+    } else {
+      element.classList.remove("is-in-viewport");
+    }
+  });
+});

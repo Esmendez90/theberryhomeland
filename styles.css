@@ -1,10 +1,10 @@
-body {
+/* body {
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 .show {
   opacity: 0;
-}
+} */
 .bg-body-tertiary {
   background-color: white !important;
 }
@@ -79,7 +79,14 @@ body {
 .snapshot-inner-container{
   background-color: #e7e6e6;
 }
-
+.snapshot-container {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+.is-in-viewport {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
 .snapshot-image {
   width: 80%;
   height: 60% !important;
