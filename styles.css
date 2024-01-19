@@ -79,7 +79,7 @@
 .snapshot-inner-container{
   background-color: #e7e6e6;
 }
-.snapshot-container {
+.display-image {
   opacity: 0;
   transition: all 1s ease-out;
 }
