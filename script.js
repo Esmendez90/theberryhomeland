@@ -10,9 +10,14 @@ function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   console.log(rect.top, rect.bottom)
   return (
-    rect.top <= 5200 &&
+    // rect.top <= 5200 &&
+    // rect.left >= 0 &&
+    // rect.bottom <= window.innerHeight &&
+    // rect.right <= window.innerWidth
+
+    rect.bottom <= 1300 &&
     rect.left >= 0 &&
-    rect.bottom <= window.innerHeight &&
+    rect.top <= window.innerHeight &&
     rect.right <= window.innerWidth
   );
 }
