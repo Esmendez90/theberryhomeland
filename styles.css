@@ -11,10 +11,12 @@
 .logo-name-text {
   margin-bottom: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(77 152 58);
+  color: rgb(129 169 25);
 }
 .logo-text-1 {
   font-size: 10px;
+  position: relative;
+    left: 29px;
 }
 .logo-text-2 {
   margin-left: 10px;
@@ -30,8 +32,11 @@
   display: inline-flex;
   width: 20px;
   height: auto;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  /* -webkit-transform: scaleX(-1); */
+  /* transform: scaleX(-1); */
+  position: absolute;
+  top: -27px;
+  left: 71px;
 }
 
 #navbarNav {
@@ -121,7 +126,8 @@
   transition-timing-function: ease-in-out;
 }
 .footer {
-  background-color: #597959;
+  /* background-color: #597959; */
+  background-color: rgb(129 169 25);;
   color: white;
 }
 .footer li {
@@ -170,7 +176,8 @@
 }
 .goTo-gallery-btn > .text-style-1 {
   width: fit-content;
-  background-color: #597959;
+  /* background-color: #597959; */
+  background-color: rgb(129 169 25);
   padding: 15px;
   margin-left: 20px;
   color: white;
@@ -228,6 +235,8 @@
   }
   .seed-icon {
     width: 30px;
+    top: -39px;
+    left: 95px;
   }
   .goTo-gallery-btn > .text-style-1 {
     margin-left: 80px;
