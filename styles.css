@@ -286,8 +286,15 @@
     background-position: center;
     background-repeat: repeat-y;
   }
+  .products-container{
+    background-color: #81a91ab5;
+    padding-top: 5px;
+  }
   .product{
     width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 10px #666363;
+    border: none;
   }
   .product img {
     height: 130px;
