@@ -260,10 +260,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  /* #product > img{
-    transition-timing-function: ease-in-out;
-  } */
- #product > img:hover {
+  #product > img:hover {
   transform: scale(2.5);
   transition: 1s ease-in-out;
  
