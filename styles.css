@@ -83,6 +83,32 @@
     padding: 20px;
     margin: 20px auto;
 }
+.mission-container {
+  background-color: rgb(129 169 25);
+  padding-bottom: 20px;
+}
+.mission-container > .heading-style-1, .mission-container > .text-style-1 {
+  color: white;
+  font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+.mission-container > .text-style-1 {
+  font-weight: 500;
+}
+
+.mission-image-container{
+  object-fit: contain;
+  height: 225px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+}
+.mission-image-container > img {
+  object-fit: fill;
+    display: block;
+    width: 100%;
+}
 /* Our products section styling */
 /* .products-container > ul {
   list-style: none;
