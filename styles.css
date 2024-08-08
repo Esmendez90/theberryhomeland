@@ -68,9 +68,20 @@
   transform: translate(-50%, -50%);
   color: white;
   display: block;
-  background-color: rgb(23 22 22 / 76%);
-  padding: 10px;
-  z-index: 1;
+  background-color: rgb(23 22 22 / 60%);
+    padding: 10px;
+    z-index: 1;
+    width: 100%;
+}
+.slogan-text{
+  background-color: white;
+    color: black;
+    transform: translate(0px, 0px);
+    position: unset;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    margin: 20px auto;
 }
 /* Our products section styling */
 /* .products-container > ul {
@@ -99,6 +110,20 @@
 } */
 .about-container {
   position: relative;
+}
+.wave-block {
+  overflow: hidden;
+}
+.wave {
+  background-color: white;
+  display: block;
+  width: 137%;
+  height: 100px;
+  transform: skew(242deg, -2deg);
+  position: relative;
+  top: -30px;
+  border-radius: 100%;
+  border-top-left-radius: 0;
 }
 .water-mark-logo-img {
   position: absolute;
@@ -238,7 +263,7 @@
   text-align: center;
   font-size: initial;
 }
-.product{
+.product {
   border: solid 0.5px grey;
   margin: 5px;
 }
@@ -250,10 +275,9 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-left: 2px;
-    padding-right: 2px;
-
+  padding-right: 2px;
 }
-.product .text-style-3{
+.product .text-style-3 {
   margin: 1rem;
 }
 /* breakpoints */
@@ -286,11 +310,11 @@
     background-position: center;
     background-repeat: repeat-y;
   }
-  .products-container{
+  .products-container {
     background-color: #81a91ab5;
     padding-top: 5px;
   }
-  .product{
+  .product {
     width: 100%;
     background-color: white;
     box-shadow: 1px 1px 10px #666363;
@@ -299,7 +323,7 @@
   .product img {
     height: 130px;
   }
-  .products-ul-container{
+  .products-ul-container {
     font-size: initial;
   }
   .product-div-container {
@@ -310,9 +334,8 @@
     max-height: 420px;
     /* padding-left: 5px;
     padding-right: 5px; */
-
   }
-  .product .text-style-3{
+  .product .text-style-3 {
     margin: 5px;
   }
 }
@@ -426,7 +449,7 @@
   .about-container {
     padding: 0 60px;
   }
- 
+
   .goTo-gallery-btn > .text-style-1 {
     margin-left: 170px;
   }
