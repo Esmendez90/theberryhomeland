@@ -114,10 +114,10 @@
   width: 100%;
 }
 /* Our products section styling */
-.products-section-container {
+.products-section-container, .knowUs-section-container {
   margin-top: 100px;
 }
-.product-section-container-list {
+.product-section-container-list, .knowUs-section-container-list {
   list-style: none;
   font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
@@ -157,6 +157,46 @@
   margin-top: 60px;
 }
 
+.knowUs-section-container-list img{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.knowUs-section-container-list a img {
+  width: 50px;
+  height: 50px;
+}
+
+.knowUs-section-container {
+  background-color: rgb(35 174 118);
+  margin-top: 0;
+  padding-bottom: 50px;
+}
+.knowUs-section-container-list {
+  text-align: center;
+}
+.knowUs-section-container-list li {
+  width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    border: 2px grey solid;
+}
+.knowUs-section-container-list li p {
+  margin: 20px auto 0;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.knowUs-section-container-list li:first-child {
+  margin-bottom: 50px;
+}
+
 .text-style-2 {
   margin-bottom: 0;
   font-weight: bold;
@@ -168,6 +208,9 @@
 .about-container {
   position: relative;
   background: rgb(250, 231, 195);
+}
+.about-container .text-style-1 {
+  margin-bottom: 0;
 }
 .wave-block {
   overflow: hidden;
@@ -182,6 +225,9 @@
   top: -30px;
   border-radius: 100%;
   border-top-left-radius: 0;
+}
+.wave-3 {
+  background-color: rgb(250, 231, 195);
 }
 
 .water-mark-logo-img {
