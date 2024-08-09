@@ -69,33 +69,36 @@
   color: white;
   display: block;
   background-color: rgb(23 22 22 / 60%);
-    padding: 10px;
-    z-index: 1;
-    width: 100%;
+  padding: 10px;
+  z-index: 1;
+  width: 100%;
 }
-.slogan-text{
+.slogan-text {
   background-color: white;
-    color: black;
-    transform: translate(0px, 0px);
-    position: unset;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    margin: 20px auto;
+  color: black;
+  transform: translate(0px, 0px);
+  position: unset;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  margin: 20px auto;
 }
 .mission-container {
   background-color: rgb(129 169 25);
   padding-bottom: 20px;
 }
-.mission-container > .heading-style-1, .mission-container > .text-style-1 {
+.mission-container > .heading-style-1,
+.mission-container > .text-style-1 {
   color: white;
-  font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 .mission-container > .text-style-1 {
   font-weight: 500;
 }
 
-.mission-image-container{
+.mission-image-container,
+.product-section-img-container {
   object-fit: contain;
   height: 225px;
   overflow: hidden;
@@ -104,23 +107,58 @@
   margin: 20px auto;
   display: block;
 }
-.mission-image-container > img {
+.mission-image-container > img,
+.product-section-img-container > img {
   object-fit: fill;
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 /* Our products section styling */
-/* .products-container > ul {
+.products-section-container {
+  margin-top: 100px;
+}
+.product-section-container-list {
   list-style: none;
-  padding: 0;
+  font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  padding-left: 0;
   margin-top: 50px;
 }
-.products-container li {
+.product-section-container-list h3 {
+  padding-left: 2rem;
+  color: rgb(129 169 25);
+  font-weight: 500;
+}
+.product-section-container-list .text-style-1 {
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: black;
+}
+.abaca-button {
+  font-weight: 600;
+  letter-spacing: 0.142857em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 32px;
+  cursor: pointer;
+  height: 56px;
+  justify-content: center;
+  max-width: 343px;
+  padding: 0 24px;
   text-decoration: none;
+  transition: none 0.3s ease;
+  transition-property: background, border-color, color;
+  margin: 20px auto;
+  display: flex;
+}
+/* .products-container li {
+   text-decoration: none;
   margin: auto;
   margin-bottom: 4rem;
   text-align: center;
-} */
+}   */
 .text-style-2 {
   margin-bottom: 0;
   font-weight: bold;
@@ -229,15 +267,19 @@
 
 /* abaca page */
 .heading-style-1 {
-  color: grey;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   text-align: center;
   font-weight: bold;
   margin: 50px auto 0px;
 }
 .text-style-1 {
   margin: 50px;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
+  font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   color: grey;
   font-size: 21px;
 }
@@ -311,10 +353,9 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   #product > img:hover {
-  transform: scale(2.5);
-  transition: 1s ease-in-out;
- 
- }
+    transform: scale(2.5);
+    transition: 1s ease-in-out;
+  }
   .carousel-inner-1 {
     background-color: rgb(0 0 0 / 6%);
   }
