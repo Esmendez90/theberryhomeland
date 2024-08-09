@@ -156,12 +156,7 @@
 .product-section-container-list li {
   margin-top: 60px;
 }
-/* .products-container li {
-   text-decoration: none;
-  margin: auto;
-  margin-bottom: 4rem;
-  text-align: center;
-}   */
+
 .text-style-2 {
   margin-bottom: 0;
   font-weight: bold;
@@ -170,13 +165,9 @@
   margin-top: 1rem;
 }
 
-/* .products-container img {
-  display: block;
-  width: 100%;
-  margin: auto;
-} */
 .about-container {
   position: relative;
+  background: rgb(250, 231, 195);
 }
 .wave-block {
   overflow: hidden;
@@ -192,6 +183,7 @@
   border-radius: 100%;
   border-top-left-radius: 0;
 }
+
 .water-mark-logo-img {
   position: absolute;
   top: 45%;
@@ -283,7 +275,7 @@
   /* font-family: "Times New Roman", Times, serif; */
   font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-  color: grey;
+  color: black;
   font-size: 21px;
 }
 
