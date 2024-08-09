@@ -153,6 +153,9 @@
   margin: 20px auto;
   display: flex;
 }
+.product-section-container-list li {
+  margin-top: 60px;
+}
 /* .products-container li {
    text-decoration: none;
   margin: auto;
