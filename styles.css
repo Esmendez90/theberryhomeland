@@ -84,7 +84,7 @@
   margin: 20px auto;
 }
 .mission-container {
-  background-color: rgb(129 169 25);
+  background-color: #409d43;
   padding-bottom: 20px;
 }
 .mission-container > .heading-style-1,
@@ -126,7 +126,7 @@
 }
 .product-section-container-list h3 {
   padding-left: 2rem;
-  color: rgb(129 169 25);
+  color: #409d43;
   font-weight: 500;
 }
 .product-section-container-list .text-style-1 {
@@ -172,7 +172,7 @@
 }
 
 .knowUs-section-container {
-  background-color: rgb(35 174 118);
+  background-color: #409d43;
   margin-top: 0;
   padding-bottom: 50px;
 }
@@ -228,6 +228,9 @@
 }
 .wave-3 {
   background-color: rgb(250, 231, 195);
+}
+.wave-4{
+  background-color: #409d43;
 }
 
 .water-mark-logo-img {
@@ -289,16 +292,16 @@
   transition-timing-function: ease-in-out;
 }
 .footer {
-  /* background-color: #597959; */
-  background-color: rgb(129 169 25);
-  color: white;
+  background: rgb(250, 231, 195);
+  color: black;
 }
 .footer li {
   list-style: none;
   margin: 10px auto;
+  color: black;
 }
 .footer ul a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 .footer ul a:hover {
@@ -404,10 +407,7 @@
     margin: auto;
     width: 100%;
   }
-  .about-container {
-    margin: 20px;
-    padding: 0 15px;
-  }
+
   .text-style-1 {
     font-size: 26px;
   }
@@ -466,6 +466,58 @@
     top: -39px;
     left: 95px;
   }
+  .intro-text {
+    background-color: rgb(23 22 22 / 30%);
+
+  }
+  .intro-text h1{
+    font-size: 45px !important;
+  }
+  .slogan-text{
+    background-color: rgb(23 22 22 / 0%);
+    width: 73%;
+  }
+  .slogan-text h1 {
+    font-size: 40px !important;
+  }
+  .mission-image-container, .mission-container > .heading-style-1, .mission-container > .text-style-1, .about-container .text-style-1 {
+    width: 60%;
+  }
+  .mission-image-container {
+    height: 333px;
+  }
+  .mission-container > .text-style-1, .about-container .text-style-1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-section-img-container {
+    width: 40%;
+    margin: 20px;
+  }
+  .float-left {
+    float: left;
+    clear: right;
+  }
+  .float-right{
+    float: right;
+    clear: left;
+  }
+  .product-section-container-list h3 {
+    padding-top: 20px;
+    display: flex;
+  }
+  .product-section-container-list .text-style-1 {
+    display: flex;
+  }
+  .product-section-img-container > img {
+    border-radius: 10px;
+  }
+  
+  .knowUs-section-container-list li {
+    width: 65%;
+    height: 480px;
+  }
+
   .goTo-gallery-btn > .text-style-1 {
     margin-left: 80px;
   }
