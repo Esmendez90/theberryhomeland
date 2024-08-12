@@ -1,10 +1,4 @@
-/* body {
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.show {
-  opacity: 0;
-} */
+
 .bg-body-tertiary {
   background-color: white !important;
 }
@@ -214,6 +208,7 @@
 }
 .wave-block {
   overflow: hidden;
+  width: 100%;
 }
 .wave {
   background-color: white;
@@ -536,10 +531,35 @@
     width: 19%;
   }
 }
+
+@media only screen and (min-width: 820px) {
+  .knowUs-section-container-list {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+  .knowUs-section-container-list li {
+    width: 40%;
+    height: 500px;
+    margin: auto 20px;
+}
+.knowUs-section-container-list li:first-child {
+  margin-bottom: 0;
+}
+
+}
+
+
+
+
+
 /* PRODUCTS PAGE */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .bg-body-tertiary{
+    padding-bottom: 0;
+  }
   .navbar-nav {
     height: auto;
     text-align: center;
@@ -550,26 +570,53 @@
     flex-grow: 0;
     align-items: right;
   }
+  .nav-item {
+    font-size: 18px;
+}
   .navbar-nav > .nav-item:not(:last-child) {
     margin-right: 20px;
   }
   .background-img-item img {
     width: 100%;
-    height: 750px;
+    height: 600px;
   }
-  .intro-text {
-    width: 70%;
-  }
-  .intro-text > h1 {
-    font-size: 80px !important;
-    letter-spacing: 1.5px;
-  }
+ 
   .heading-style-1,
   .footer h1 {
-    font-size: 75px;
+    font-size: 40px;
   }
   .text-style-1 {
-    font-size: 33px;
+    font-size: 24px;
+  }
+  .product-section-container-list h3 {
+    width: fit-content;
+  }
+  .product-section-container-list, .knowUs-section-container-list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mission-image-container {
+    width: 54%;
+    height: 355px;
+    float: right;
+    clear: left;
+    padding-top: 50px;
+    margin-top: 150px;
+  }
+  .mission-image-container > img {
+    width: 90%;
+    border-radius: 10px;
+  }
+  .mission-container > .text-style-1 {
+    margin-left: 66px;
+    margin-right: 20px;
+    width: 35%;
+  }
+  .mission-container > .heading-style-1 {
+    margin-left: 66px;
+    width: fit-content;
+    margin-right: 20px;
   }
   .snapshot-container > .carousel-inner > .carousel-item {
     display: contents !important;
@@ -592,10 +639,7 @@
   .gallery-item > video {
     width: 60%;
   }
-  .footer {
-    padding-right: 5rem;
-    padding-left: 5rem;
-  }
+
   .footer ul {
     font-size: 24px;
   }
