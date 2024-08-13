@@ -228,6 +228,9 @@
 .wave-4 {
   background-color: #409d43;
 }
+.wave-style-5 {
+  background-color: white;
+}
 
 .water-mark-logo-img {
   position: absolute;
@@ -387,7 +390,9 @@
 .goTo-gallery-btn > .text-style-1:hover {
   cursor: pointer;
 }
-
+.abaca-article-container, .about-container-privacy-policy {
+  background-color: white;
+}
 .abaca-article-container > h3 {
   margin: 50px 20px 0;
 }
@@ -453,7 +458,7 @@
     background-repeat: repeat-y;
   }
   .products-container {
-    background-color: #81a91ab5;
+    background-color: white;
     padding-top: 5px;
   }
   .product {
@@ -693,9 +698,6 @@
   .footer ul {
     font-size: 24px;
   }
-  /* .products-container img {
-    width: 40%;
-  } */
   .qrCode-img {
     width: 30%;
   }
