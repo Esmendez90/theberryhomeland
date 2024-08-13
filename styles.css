@@ -654,6 +654,9 @@
   }
 }
 @media only screen and (min-width: 1160px) {
+  .product-section-container-list {
+    width: 70%;
+  }
 
   .product-section-container-list li:not(:first-child) {
     margin-top: 90px;
@@ -662,10 +665,32 @@
     padding-top: 40px;
     width: 50%;
   }
-  .mission-image-container{
-    margin-top: 40px;
-    height: 400px;
+  .product-section-img-container {
+    width: 34%;
   }
+  .mission-image-container{
+    margin-top: 100px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+     margin-right: 40px;
+  }
+  .mission-image-container > img {
+width: 60%;
+  }
+  .mission-container > .heading-style-1, .mission-container > .text-style-1{
+    margin-left: 300px;
+    margin-right: 10px;
+  }
+  .knowUs-section-container-list li{
+    width: 25%;
+    height: 580px;
+  }
+  .wave-block-2 {
+    position: relative;
+    top: -16px;
+  }
+
 }
 
 
