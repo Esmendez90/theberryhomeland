@@ -80,6 +80,9 @@
   background-color: #409d43;
   padding-bottom: 20px;
 }
+.mission-container-image-text .text-style-1, .mission-container-image-text .heading-style-1 {
+  color: #FFF;
+}
 .mission-container > .heading-style-1,
 .mission-container > .text-style-1 {
   color: white;
@@ -95,7 +98,7 @@
   object-fit: contain;
   height: 225px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 90%;
   margin: 20px auto;
   display: block;
@@ -177,7 +180,7 @@
 .knowUs-section-container-list li {
   width: 70%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: white;
   padding: 20px;
   border: 2px grey solid;
@@ -383,7 +386,7 @@
   padding: 15px;
   margin-left: 20px;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   border-bottom: solid 2px #00000061;
   border-right: solid 2px #00000063;
 }
@@ -400,7 +403,7 @@
 .qrCode-img {
   display: block;
   width: 25%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 /* OUR PRODUCTS PAGE */
 .products-ul-container {
@@ -539,6 +542,7 @@
     width: 60%;
   }
   .mission-image-container {
+    width: 90%;
     height: 333px;
   }
   .mission-container > .text-style-1,
@@ -546,27 +550,40 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .product-section-img-container {
-    width: 40%;
-    margin: 20px;
+  .product-section-container-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
   }
-  .float-left {
+  .product-section-container-list li {
+    margin-top: 0;
+  }
+  .product-section-img-container {
+    /* width: 40%;
+    margin: 20px; */
+    display: flex;
+    height: 170px;
+  }
+  /* .float-left {
     float: left;
     clear: right;
   }
   .float-right {
     float: right;
     clear: left;
-  }
+  } */
   .product-section-container-list h3 {
-    padding-top: 20px;
+    padding-top: 0;
     display: flex;
+    font-size: 17px;
   }
   .product-section-container-list .text-style-1 {
     display: flex;
+    font-size: 13px;
   }
   .product-section-img-container > img {
-    border-radius: 10px;
+    border-radius: 5px;
+    object-fit: cover;
   }
 
   .knowUs-section-container-list li {
@@ -651,27 +668,30 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .mission-container-image-text{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+  }
   .mission-image-container {
-    width: 54%;
-    height: 355px;
-    float: right;
-    clear: left;
-    padding-top: 50px;
-    margin-top: 150px;
+    margin: 0 30px 0 60px;
   }
-  .mission-image-container > img {
-    width: 90%;
-    border-radius: 10px;
+  .mission-container-heading-text {
+    margin: 4rem 6rem 4rem 6rem;
   }
-  .mission-container > .text-style-1 {
-    margin-left: 66px;
-    margin-right: 20px;
-    width: 35%;
+  .mission-container-image-text .heading-style-1, .mission-container-image-text .text-style-1 {
+    margin: 30px 0;
+   }
+
+  .product-section-img-container {
+    height: 200px;
   }
-  .mission-container > .heading-style-1 {
-    margin-left: 66px;
-    width: fit-content;
-    margin-right: 20px;
+  .product-section-container-list h3 {
+    font-size: 20px;
+  }
+  .product-section-container-list .text-style-1 {
+    font-size: 17px;
   }
   .snapshot-container > .carousel-inner > .carousel-item {
     display: contents !important;
@@ -706,21 +726,11 @@
   }
 }
 @media only screen and (min-width: 1160px) {
-  .product-section-container-list {
-    width: 70%;
-  }
-
-  .product-section-container-list li:not(:first-child) {
-    margin-top: 90px;
-  }
-  .product-section-container-list h3 {
-    padding-top: 40px;
-    width: 50%;
-  }
+  
   .product-section-img-container {
-    width: 34%;
+   height: 240px;
   }
-  .mission-image-container {
+  /* .mission-image-container {
     margin-top: 100px;
     height: 400px;
     display: flex;
@@ -729,12 +739,12 @@
   }
   .mission-image-container > img {
     width: 60%;
-  }
-  .mission-container > .heading-style-1,
+  } */
+  /* .mission-container > .heading-style-1,
   .mission-container > .text-style-1 {
     margin-left: 300px;
     margin-right: 10px;
-  }
+  } */
   .knowUs-section-container-list li {
     width: 25%;
     height: 580px;
@@ -750,9 +760,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .mission-image-container {
+  /* .mission-image-container {
     margin-top: 50px;
-  }
+  } */
   .wave {
     transform: skew(242deg, 0deg);
   }
