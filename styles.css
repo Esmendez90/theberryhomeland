@@ -190,6 +190,7 @@ input[type="submit"]:hover {
   width: 90%;
   margin: 20px auto;
   display: block;
+  box-shadow: 3px 1px 12px #484646d6;
 }
 .mission-image-container > img,
 .product-section-img-container > img {
@@ -272,7 +273,6 @@ color: rgb(252, 164, 1);
   height: 50px;
 }
 
-.knowUs-section-container,
 .footer {
   background-image: linear-gradient(45deg, black, #357b37, #4cb14f);
   margin-top: 0;
@@ -280,6 +280,7 @@ color: rgb(252, 164, 1);
 }
 .knowUs-section-container-list {
   text-align: center;
+  margin: 100px auto;
 }
 .knowUs-section-container-list li {
   width: 70%;
@@ -288,6 +289,7 @@ color: rgb(252, 164, 1);
   background-color: white;
   padding: 20px;
   border: 2px grey solid;
+  box-shadow: 3px 1px 12px #484646d6;
 }
 .knowUs-section-container-list li p {
   margin: 20px auto 0;
@@ -442,7 +444,7 @@ color: rgb(252, 164, 1);
 }
 /* abaca page */
 .heading-style-1 {
-  color: black;
+  color: #357b37;
   font-family: Rubik, Source Sans Pro, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   text-align: center;
