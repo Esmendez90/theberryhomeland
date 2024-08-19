@@ -24,9 +24,11 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"
-          ><div class="navbar-brand mb-0 h1">
-            <p class="logo-name-text logo-text-1">The</p>
+        <a class="navbar-brand navbar-anchor-tag" href="./"
+          >
+          <div class="navbar-brand mb-0 h1">
+            <img src="./images/farm-logo.png"/>
+            <!-- <p class="logo-name-text logo-text-1">The</p>
             <div style="display: inline-flex; position: relative">
               <p class="logo-name-text logo-text-2">Berry</p>
               <img
@@ -35,7 +37,7 @@
                 alt="seeding icon"
               />
             </div>
-            <p class="logo-name-text logo-text-3">Homeland</p>
+            <p class="logo-name-text logo-text-3">Homeland</p> -->
           </div></a
         >
 
@@ -55,9 +57,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./">Home</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="./products.html">Products</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./aboutus.html">About Us</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./abaca.html">Abaca Fiber Market</a>
             </li>
@@ -65,7 +67,12 @@
               <a class="nav-link" href="./gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./privacy-policy.html">Privacy Policy</a>
+              <a class="nav-link" href="./products.html">Cacao & Coffee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./privacy-policy.html"
+                >Privacy Policy</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#footer">Contact Us</a>
@@ -76,88 +83,165 @@
     </nav>
     <!-- End of Navbar -->
 
-    <h1 class="heading-style-1">
-      <em>Our Products</em>
-    </h1>
-    <div class="products-container">
-      <ul class="products-ul-container text-style-1">
-        <div class="product-div-container">
-          <li class="product product-1" id="product">
-            <h3 class="text-style-2">Organic Coffee Grounded</h3>
-            <p class="text-style-3">12 oz.</p>
-            <p class="text-style-3">$16.00</p>
-            <img src="./images/organic-coffee-ground.jpg" />
-            <p class="text-style-3">
+    <!-- Products brief description section -->
+    <div class="products-section-container">
+      <h1 class="heading-style-1">
+        <em>Our Products</em>
+      </h1>
+      <ul class="product-section-container-list">
+        <!-- li el 1 -->
+        <li>
+          <div class="product-section-img-container float-left">
+            <img src="./images/snapshot38.png" />
+          </div>
+          <div class="product-text-container-right">
+            <h3>Abaca Fiber</h3>
+
+            <p class="text-style-1">
+              A versatile and sustainable material with a myriad of
+              applications.
+            </p>
+            <a
+              href="./abaca.html"
+              class="abaca-button"
+              style="background-color: rgb(243, 162, 8); color: rgb(7, 38, 30)"
+              >Learn More</a
+            >
+          </div>
+        </li>
+
+        <!-- li el 2 -->
+        <li>
+          <div class="product-section-img-container float-right">
+            <img src="./images/snapshot39.png" />
+          </div>
+          <div class="product-text-container-left">
+            <h3>Organic Coffee | Grounded</h3>
+            <h3>12 oz.</h3>
+            <h3>$16.00</h3>
+            <p class="text-style-1">
               This blend of three Arabica coffees (geisha, tipica, and caturra)
               produces a complex, nutty, and floral flavor.
             </p>
-          </li>
-        </div>
-        <div class="product-div-container">
-          <li class="product product-5" id="product">
-            <h3 class="text-style-2">Organic Coffee Beans</h3>
-            <p class="text-style-3">12 oz.</p>
-            <p class="text-style-3">$16.00</p>
-            <img src="./images/organic-coffee-beans.jpg" />
-            <p class="text-style-3">
-              Savor the distinct richness of our meticulously sourced organic coffee beans, crafted
-              to deliver an unparalleled coffee experience.
+          </div>
+        </li>
+
+        <!-- li el 3 -->
+        <li>
+          <div class="product-section-img-container float-left">
+            <img src="./images/snapshot40.png" />
+          </div>
+          <div class="product-text-container-right">
+            <h3>Organic Coffee Beans</h3>
+            <h3>12 oz.</h3>
+            <h3>$16.00</h3>
+            <p class="text-style-1">
+              Savor the distinct richness of our meticulously sourced organic
+              coffee beans, crafted to deliver an unparalleled coffee
+              experience.
             </p>
-          </li>
-        </div>
-        <div class="product-div-container">
-          <li class="product product-2" id="product">
-            <h3 class="text-style-2">Medium Roast Coffee Grounded</h3>
-            <p class="text-style-3">12 oz.</p>
-            <p class="text-style-3">$10.00</p>
-            <img src="./images/medium-roast-coffee-photoshoped.jpg" />
-            <p class="text-style-3">
+          </div>
+        </li>
+
+        <!-- li el 4 -->
+        <li>
+          <div class="product-section-img-container float-right">
+            <img src="./images/snapshot41.png" />
+          </div>
+          <div class="product-text-container-left">
+            <h3>Medium Roast Coffee | Grounded</h3>
+            <h3>10 oz.</h3>
+            <h3>$10.00</h3>
+            <p class="text-style-1">
               The cold winds and the rich volcanic soil give this blend the
               perfect taste and aroma for every morning.
             </p>
-          </li>
-        </div>
+          </div>
+        </li>
 
-        <div class="product-div-container">
-          <li class="product product-3" id="product">
-            <h3 class="text-style-2">Organic Chocolate Grounded</h3>
-            <p class="text-style-3">12 oz.</p>
-            <p class="text-style-3">$16.00</p>
-            <img src="./images/organic-chocolate-shows-powder.jpg" />
-            <p class="text-style-3">Indulge guilt-free with our organic chocolate, crafted with care from the finest natural ingredients.</p>
-          </li>
-        </div>
-        <div class="product-div-container">
-          <li class="product product-4" id="product">
-            <h3 class="text-style-2">Chocolate Bar</h3>
-            <p class="text-style-3">100% Cacao - 120 g.</p>
-            <p class="text-style-3">$6.00</p>
-            <img src="./images/chocolate-bar-100cacao.jpg" />
-            <p class="text-style-3">
-              Delight in the intense richness of our 100% cacao chocolate bar, a pure indulgence for true chocholate connoisseurs.
+        <!-- li el 5 -->
+        <li>
+          <div class="product-section-img-container float-left">
+            <img src="./images/snapshot42.png" />
+          </div>
+          <div class="product-text-container-right">
+            <h3>Organic Chocolate | Grounded</h3>
+            <h3>12 oz.</h3>
+            <h3>$16.00</h3>
+            <p class="text-style-1">
+              Indulge guilt-free with our organic chocolate, crafted with care
+              from the finest natural ingredients.
             </p>
-          </li>
-        </div>
+          </div>
+        </li>
 
-      
+        <!-- li el 6 -->
+        <li>
+          <div class="product-section-img-container float-right">
+            <img src="./images/snapshot43.png" />
+          </div>
+          <div class="product-text-container-left">
+            <h3>100% Cacao Chocolate Bar</h3>
+            <h3>120 g.</h3>
+            <h3>$6.00</h3>
+            <p class="text-style-1">
+              Delight in the intense richness of our 100% cacao chocolate bar, a
+              pure indulgence for true chocholate connoisseurs.
+            </p>
+          </div>
+        </li>
       </ul>
+      <h4 style="margin:20px">Ordering and payment options:</h4>
+      <a
+        href="#footer"
+        class="abaca-button"
+        style="background-color: rgb(243, 162, 8); color: rgb(7, 38, 30)"
+        >Contact Us</a
+      >
     </div>
+    <!-- end of products section list container -->
 
-    <div>
-      <p class="text-style-3" style="padding-left: 20px; padding-right: 20px">
-        <a href="#footer">Contact us</a> for ordering and payment options.
-      </p>
-    </div>
+
+   
 
        <!-- Footer -->
        <div class="footer" id="footer">
         <div class="wave-block wave-block-4">
-          <div class="wave wave-4 wave-style-5"></div>
+          <div class="wave wave-4"></div>
         </div>
-        <div class="footer-contact-followus-container">
-          <div class="footer-contact-container">
-            <h3 class="heading-style-1">Contact Info.</h3>
+        <h3 class="heading-style-1">Contact Us</h3>
   
+        <div class="footer-contact-followus-container">
+          <div class="container">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your first name"
+              />
+  
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name"
+              />
+  
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something..."
+                style="height: 200px"
+              ></textarea>
+  
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <div class="footer-contact-container">
             <ul class="text-style-1">
               <li style="padding-right: 2rem">
                 For inquiries, ordering and payment options contact us at:
@@ -183,9 +267,7 @@
               <li><em>We'd love to hear from you!</em></li>
             </ul>
           </div>
-          <div class="water-mark-logo-img footer-site-logo-container">
-            <img src="./images/berryhomeland-logo-4-removebg.png" />
-          </div>
+          
           <div class="footer-followUs-container">
             <h3 class="heading-style-1">Follow Us</h3>
             <ul>
@@ -198,17 +280,18 @@
                 </a>
               </li>
               <li class="footer-linkedin-logo-li">
-                <a href="https://www.linkedin.com/company/the-berry-home-land/"
-                  target="_blank"><img src="./images/linkedin-logo.webp" alt="_blank"
+                <a
+                  href="https://www.linkedin.com/company/the-berry-home-land/"
+                  target="_blank"
+                  ><img src="./images/linkedin-logo.webp" alt="_blank"
                 /></a>
               </li>
-              <!-- <li>
-                <p>Scan our QR code</p>
-                <img src="./images/instagram-qr-code.jpg" class="qrCode-img" />
-              </li> -->
+           
             </ul>
           </div>
-          
+          <div class="water-mark-logo-img footer-site-logo-container">
+            <img src="./images/berryhomeland-logo-4-removebg.png" />
+          </div>
         </div>
         <div class="data-container">
           <p>Designed by</p>

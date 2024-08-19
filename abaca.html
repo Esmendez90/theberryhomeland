@@ -19,10 +19,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./"
-          ><div class="navbar-brand mb-0 h1">
-            <p class="logo-name-text logo-text-1">The</p>
-            <div style="display: inline-flex; position: relative;">
+        <a class="navbar-brand navbar-anchor-tag" href="./"
+          >
+          <div class="navbar-brand mb-0 h1">
+            <img src="./images/farm-logo.png"/>
+            <!-- <p class="logo-name-text logo-text-1">The</p>
+            <div style="display: inline-flex; position: relative">
               <p class="logo-name-text logo-text-2">Berry</p>
               <img
                 src="./images/berryhomeland-logo-4-removebg.png"
@@ -30,7 +32,7 @@
                 alt="seeding icon"
               />
             </div>
-            <p class="logo-name-text logo-text-3">Homeland</p>
+            <p class="logo-name-text logo-text-3">Homeland</p> -->
           </div></a
         >
 
@@ -50,9 +52,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./">Home</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="./products.html">Products</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./aboutus.html">About Us</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./abaca.html">Abaca Fiber Market</a>
             </li>
@@ -60,7 +62,12 @@
               <a class="nav-link" href="./gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./privacy-policy.html">Privacy Policy</a>
+              <a class="nav-link" href="./products.html">Cacao & Coffee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./privacy-policy.html"
+                >Privacy Policy</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#footer">Contact Us</a>
@@ -267,12 +274,41 @@
       <!-- Footer -->
       <div class="footer" id="footer">
         <div class="wave-block wave-block-4">
-          <div class="wave wave-4 wave-style-5"></div>
+          <div class="wave wave-4"></div>
         </div>
-        <div class="footer-contact-followus-container">
-          <div class="footer-contact-container">
-            <h3 class="heading-style-1">Contact Info.</h3>
+        <h3 class="heading-style-1">Contact Us</h3>
   
+        <div class="footer-contact-followus-container">
+          <div class="container">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your first name"
+              />
+  
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name"
+              />
+  
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something..."
+                style="height: 200px"
+              ></textarea>
+  
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <div class="footer-contact-container">
             <ul class="text-style-1">
               <li style="padding-right: 2rem">
                 For inquiries, ordering and payment options contact us at:
@@ -298,9 +334,7 @@
               <li><em>We'd love to hear from you!</em></li>
             </ul>
           </div>
-          <div class="water-mark-logo-img footer-site-logo-container">
-            <img src="./images/berryhomeland-logo-4-removebg.png" />
-          </div>
+          
           <div class="footer-followUs-container">
             <h3 class="heading-style-1">Follow Us</h3>
             <ul>
@@ -313,17 +347,18 @@
                 </a>
               </li>
               <li class="footer-linkedin-logo-li">
-                <a href="https://www.linkedin.com/company/the-berry-home-land/"
-                  target="_blank"><img src="./images/linkedin-logo.webp" alt="_blank"
+                <a
+                  href="https://www.linkedin.com/company/the-berry-home-land/"
+                  target="_blank"
+                  ><img src="./images/linkedin-logo.webp" alt="_blank"
                 /></a>
               </li>
-              <!-- <li>
-                <p>Scan our QR code</p>
-                <img src="./images/instagram-qr-code.jpg" class="qrCode-img" />
-              </li> -->
+           
             </ul>
           </div>
-          
+          <div class="water-mark-logo-img footer-site-logo-container">
+            <img src="./images/berryhomeland-logo-4-removebg.png" />
+          </div>
         </div>
         <div class="data-container">
           <p>Designed by</p>
