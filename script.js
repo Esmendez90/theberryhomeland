@@ -1,24 +1,33 @@
-let preLoader = document.getElementsByClassName("onload-img");
+const preLoader = document.getElementsByClassName("onload-img");
+const elements = document.querySelectorAll(".display-element");
 
-function preloaderFunction() {
-  $(preLoader[0]).addClass("fade-out");
+if (preLoader) {
+  function preloaderFunction() {
+    $(preLoader[0]).addClass("fade-out");
+  }
+} else {
+  console.log("hell");
 }
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
-  console.log(rect.top, rect.bottom);
+  //console.log(element, rect.y);
+ // console.log("TOP:", rect.top, "BOTTOM:", rect.bottom, rect.x, rect.y);
   return (
-    rect.bottom <= 1300 &&
-    rect.left >= 0 &&
-    rect.top <= window.innerHeight &&
-    rect.right <= window.innerWidth
+    rect.y <= 850
+    // rect.bottom <= 500 &&
+    // rect.left <= window.innerWidth &&
+    // rect.top <= 9082 &&
+    // rect.right <= window.innerWidth 
+    // rect.bottom <= 0 &&
+    // rect.left >= 0 &&
+    // rect.top <= window.innerHeight &&
+    // rect.right <= window.innerWidth
   );
 }
 
-const elements = document.querySelectorAll(".display-image");
 window.addEventListener("scroll", () => {
   elements.forEach((element) => {
-    //     console.log("element: ", element);
     if (isInViewport(element)) {
       element.classList.add("is-in-viewport");
     } else {

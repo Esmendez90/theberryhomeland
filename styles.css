@@ -9,7 +9,7 @@
     background: url(./images/berryhomeland-logo-4-removebg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #031804b3;
+    background-color: #031804d3;
     opacity: 1;
 }
 
@@ -379,10 +379,12 @@ input[type="submit"]:hover {
 .intro-text h5 {
   text-align: right;
 }
-
+.display-element {
+  opacity:0;
+}
 .is-in-viewport {
   opacity: 1;
-  transition: all 0.2s ease-in;
+  transition: all 1s ease-in-out;
 }
 .snapshot-image {
   width: 80%;
