@@ -11,14 +11,12 @@ if (preLoader) {
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
-  //console.log(element, rect.y);
+  console.log(element, rect);
  // console.log("TOP:", rect.top, "BOTTOM:", rect.bottom, rect.x, rect.y);
   return (
+   // rect.y <= 870
     rect.y <= 850
-    // rect.bottom <= 500 &&
-    // rect.left <= window.innerWidth &&
-    // rect.top <= 9082 &&
-    // rect.right <= window.innerWidth 
+    
     // rect.bottom <= 0 &&
     // rect.left >= 0 &&
     // rect.top <= window.innerHeight &&
