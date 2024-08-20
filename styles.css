@@ -1,3 +1,24 @@
+
+.onload-img {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url(./images/berryhomeland-logo-4-removebg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #031804b3;
+    opacity: 1;
+}
+
+.fade-out{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s ease-in-out;
+}
+
 innput[type="text"],
 select,
 textarea {
@@ -252,8 +273,7 @@ input[type="submit"]:hover {
   text-shadow: 1px 1px black;
 }
 .abaca-button:hover {
-color: rgb(252, 164, 1);
-
+  color: rgb(252, 164, 1);
 }
 .product-section-container-list li {
   margin-top: 60px;
@@ -314,6 +334,9 @@ color: rgb(252, 164, 1);
 }
 .about-container .text-style-1 {
   margin-bottom: 0;
+}
+.about-container .wave-block{
+  display: none;
 }
 .wave-block {
   overflow: hidden;
