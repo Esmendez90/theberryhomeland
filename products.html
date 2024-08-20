@@ -28,16 +28,7 @@
           >
           <div class="navbar-brand mb-0 h1">
             <img src="./images/farm-logo.png"/>
-            <!-- <p class="logo-name-text logo-text-1">The</p>
-            <div style="display: inline-flex; position: relative">
-              <p class="logo-name-text logo-text-2">Berry</p>
-              <img
-                src="./images/berryhomeland-logo-4-removebg.png"
-                class="seed-icon"
-                alt="seeding icon"
-              />
-            </div>
-            <p class="logo-name-text logo-text-3">Homeland</p> -->
+        
           </div></a
         >
 
@@ -85,8 +76,9 @@
 
     <!-- Products brief description section -->
     <div class="products-section-container">
+      <div class="background-logo"></div>
       <h1 class="heading-style-1">
-        <em>Our Products</em>
+        Our Products
       </h1>
       <ul class="product-section-container-list">
         <!-- li el 1 -->
@@ -191,13 +183,8 @@
           </div>
         </li>
       </ul>
-      <h4 style="margin:20px">Ordering and payment options:</h4>
-      <a
-        href="#footer"
-        class="abaca-button"
-        style="background-color: rgb(243, 162, 8); color: rgb(7, 38, 30)"
-        >Contact Us</a
-      >
+      <p class="text-style-1">Contact us for ordering and payment option.</p>
+    
     </div>
     <!-- end of products section list container -->
 
@@ -213,29 +200,29 @@
   
         <div class="footer-contact-followus-container">
           <div class="container">
-            <form action="action_page.php">
-              <label for="fname">First Name</label>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="c920c73c-21d6-4e9b-8a6d-7bc8ff559d36"
+              />
+              <label for="fname">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+  
+              <label for="email">Email</label>
               <input
                 type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your first name"
+                id="email"
+                name="email"
+                placeholder="Your email"
               />
   
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name"
-              />
-  
-              <label for="subject">Subject</label>
               <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something..."
+                id="message"
+                name="message"
+                placeholder="Your message here..."
                 style="height: 200px"
+                required
               ></textarea>
   
               <input type="submit" value="Submit" />

@@ -23,16 +23,6 @@
           >
           <div class="navbar-brand mb-0 h1">
             <img src="./images/farm-logo.png"/>
-            <!-- <p class="logo-name-text logo-text-1">The</p>
-            <div style="display: inline-flex; position: relative">
-              <p class="logo-name-text logo-text-2">Berry</p>
-              <img
-                src="./images/berryhomeland-logo-4-removebg.png"
-                class="seed-icon"
-                alt="seeding icon"
-              />
-            </div>
-            <p class="logo-name-text logo-text-3">Homeland</p> -->
           </div></a
         >
 
@@ -80,10 +70,11 @@
 
     <!-- ARticle -->
     <div class="about-container abaca-article-container">
+      <div class="background-logo"></div>
       <h1 class="heading-style-1">
-        <em
-          >Navigating the Abaca Fiber Market: Growth Trends and Future Demand by
-          2031</em
+        
+          Navigating the Abaca Fiber Market: Growth Trends and Future Demand by
+          2031
         >
       </h1>
       <p class="text-style-1">
@@ -280,29 +271,29 @@
   
         <div class="footer-contact-followus-container">
           <div class="container">
-            <form action="action_page.php">
-              <label for="fname">First Name</label>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="c920c73c-21d6-4e9b-8a6d-7bc8ff559d36"
+              />
+              <label for="fname">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" />
+  
+              <label for="email">Email</label>
               <input
                 type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Your first name"
+                id="email"
+                name="email"
+                placeholder="Your email"
               />
   
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Your last name"
-              />
-  
-              <label for="subject">Subject</label>
               <textarea
-                id="subject"
-                name="subject"
-                placeholder="Write something..."
+                id="message"
+                name="message"
+                placeholder="Your message here..."
                 style="height: 200px"
+                required
               ></textarea>
   
               <input type="submit" value="Submit" />
