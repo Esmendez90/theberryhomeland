@@ -11,7 +11,7 @@ if (preLoader) {
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
-  console.log(element, rect);
+  // console.log(element, rect);
  // console.log("TOP:", rect.top, "BOTTOM:", rect.bottom, rect.x, rect.y);
   return (
    // rect.y <= 870
