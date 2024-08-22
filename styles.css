@@ -169,11 +169,17 @@ input[type="submit"]:hover {
   transform: translate(-50%, -50%);
   color: white;
   display: block;
-  /* background-color: rgb(23 22 22 / 60%); */
   padding: 40px;
   z-index: 1;
   width: 100%;
+  opacity: 0;
+  visibility: hidden;
 }
+.fade-in {
+  visibility: initial;
+  opacity: 1;
+  transition: visibility 0s 1.5s ease-in-out, opacity 1.5s ease-in-out;}
+
 .intro-text h1,
 .intro-text h3 {
   text-shadow: 1px 1px black;

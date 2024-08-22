@@ -1,26 +1,19 @@
-const preLoader = document.getElementsByClassName("onload-img");
+const preLoaderImg = document.getElementsByClassName("onload-img");
+const introTextFadeIn = document.getElementsByClassName("intro-text");
 const elements = document.querySelectorAll(".display-element");
 
-if (preLoader) {
+if ((preLoaderImg) && (introTextFadeIn) ){
   function preloaderFunction() {
-    $(preLoader[0]).addClass("fade-out");
+    $(preLoaderImg[0]).addClass("fade-out");
+    $(introTextFadeIn[0]).addClass("fade-in");
   }
-} else {
-  console.log("hell");
 }
+
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
-  // console.log(element, rect);
- // console.log("TOP:", rect.top, "BOTTOM:", rect.bottom, rect.x, rect.y);
   return (
-   // rect.y <= 870
     rect.y <= 850
-    
-    // rect.bottom <= 0 &&
-    // rect.left >= 0 &&
-    // rect.top <= window.innerHeight &&
-    // rect.right <= window.innerWidth
   );
 }
 
