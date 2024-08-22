@@ -14,10 +14,12 @@
 }
 .background-logo {
   background-color: transparent;
-  z-index: -1;
+  z-index: -3;
   opacity: 0.2;
   top: 35%;
   height: 320px;
+  width: 50%;
+  left: 25%;
 }
 
 .fade-out {
