@@ -1,3 +1,23 @@
+.gallery-item, .gallery-item-2 {
+  display: none;
+}
+.buttons-container{
+  margin: 20px;
+  padding:10px;
+ text-align: center;
+}
+.buttons-container button {
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: #8BC34A;
+  color: white;
+  text-shadow: 0.5px 1px black;
+  margin: auto 10px;
+  font-size: 21px;
+}
+
 .onload-img,
 .background-logo {
   position: fixed;
@@ -507,7 +527,7 @@ input[type="submit"]:hover {
 .gallery-container {
   margin-bottom: 100px;
 }
-.gallery-item > img, .gallery-farm-video {
+.gallery-item img, .gallery-item-2 img, .gallery-farm-video {
   display: block;
   margin: 20px auto;
   width: 80%;
@@ -707,12 +727,12 @@ input[type="submit"]:hover {
     width: 65%;
     height: 480px;
   }
-.gallery-item {
-  display: grid;
+ .gallery-item, .gallery-item-2 {
   grid-template-columns: 28% 28% 28%;
   justify-content: center;
 }
-  .gallery-item > img, .gallery-farm-video {
+
+  .gallery-item img, .gallery-item-2 img, .gallery-farm-video {
     display: flex;
     width: 95%;
     height: 300px;
