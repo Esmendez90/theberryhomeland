@@ -1,17 +1,18 @@
-.gallery-item, .gallery-item-2 {
+.gallery-item,
+.gallery-item-2 {
   display: none;
 }
-.buttons-container{
+.buttons-container {
   margin: 20px;
-  padding:10px;
- text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 .buttons-container button {
   border: none;
   width: 100px;
   height: 100px;
   border-radius: 10px;
-  background: #8BC34A;
+  background: #8bc34a;
   color: white;
   text-shadow: 0.5px 1px black;
   margin: auto 10px;
@@ -164,7 +165,7 @@ input[type="submit"]:hover {
   top: 0;
   width: 100%;
 }
-.farm-video {
+.hero-img {
   margin: auto;
   display: block;
   bottom: auto;
@@ -177,11 +178,20 @@ input[type="submit"]:hover {
   opacity: 1;
   position: absolute;
   right: auto;
-  top: 50%;
+  top: 45%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   transition: opacity 1.5s;
-  width: auto;
+  width: 100%;
+}
+.farm-video-2-container {
+  width: 100%;
+  margin: auto;
+}
+.farm-video-2-container video {
+  width: 100%;
+  margin: auto;
+  display: block;
 }
 .intro-text {
   text-align: center;
@@ -200,7 +210,8 @@ input[type="submit"]:hover {
 .fade-in {
   visibility: initial;
   opacity: 1;
-  transition: visibility 0s 1.5s ease-in-out, opacity 1.5s ease-in-out;}
+  transition: visibility 0s 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
 
 .intro-text h1,
 .intro-text h3 {
@@ -230,6 +241,8 @@ input[type="submit"]:hover {
   background-image: linear-gradient(118deg, black, #409d43);
 }
 
+.farm-video-2-container .heading-style-1,
+.farm-video-2-container .text-style-1,
 .mission-container .heading-style-1,
 .mission-container .text-style-1 {
   color: #357b37;
@@ -527,7 +540,9 @@ input[type="submit"]:hover {
 .gallery-container {
   margin-bottom: 100px;
 }
-.gallery-item img, .gallery-item-2 img, .gallery-farm-video {
+.gallery-item img,
+.gallery-item-2 img,
+.gallery-farm-video {
   display: block;
   margin: 20px auto;
   width: 80%;
@@ -582,7 +597,7 @@ input[type="submit"]:hover {
   .home-video {
     height: 100%;
   }
-  .farm-video {
+  .hero-img {
     position: initial;
     left: 0;
     right: 0;
@@ -595,6 +610,9 @@ input[type="submit"]:hover {
   .background-img-item img {
     margin: auto;
     width: 100%;
+  }
+  .farm-video-2-container video {
+    width: 70%;
   }
 
   .text-style-1 {
@@ -727,12 +745,15 @@ input[type="submit"]:hover {
     width: 65%;
     height: 480px;
   }
- .gallery-item, .gallery-item-2 {
-  grid-template-columns: 28% 28% 28%;
-  justify-content: center;
-}
+  .gallery-item,
+  .gallery-item-2 {
+    grid-template-columns: 28% 28% 28%;
+    justify-content: center;
+  }
 
-  .gallery-item img, .gallery-item-2 img, .gallery-farm-video {
+  .gallery-item img,
+  .gallery-item-2 img,
+  .gallery-farm-video {
     display: flex;
     width: 95%;
     height: 300px;
@@ -790,6 +811,9 @@ input[type="submit"]:hover {
   .background-img-item img {
     width: 100%;
     height: 600px;
+  }
+  .farm-video-2-container video {
+    width: 50%;
   }
 
   .heading-style-1,
@@ -891,13 +915,13 @@ input[type="submit"]:hover {
   .wave {
     transform: skew(242deg, 0deg);
   }
-
+  .farm-video-2-container video {
+    width: 25%;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
- 
 }
 
 @media only screen and (min-width: 1600px) {
-
 }

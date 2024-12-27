@@ -49,3 +49,5 @@ window.addEventListener("scroll", () => {
 });
 
 window.onload = preloaderFunction;
+
+
