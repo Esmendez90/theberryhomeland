@@ -1,7 +1,31 @@
+#abaca-container {
+  background: url(./images/IMG-20240812-WA0083.jpg);
+}
+#coffee-container {
+  background: url(./images/snapshot-8.jpg);
+}
+#cacao-container {
+  background: url(./images/snapshot-9.jpg);
+}
+#abaca-container,
+#coffee-container,
+#cacao-container {
+  background-size: cover;
+  background-position: center;
+}
+
+#abaca-container:hover,
+#coffee-container:hover,
+#cacao-container:hover {
+  box-shadow: 4px 4px #8bc34a;
+}
+
 .gallery-item,
-.gallery-item-2 {
+.gallery-item-2,
+.gallery-item-3 {
   display: none;
 }
+
 .buttons-container {
   margin: 20px;
   padding: 10px;
@@ -15,7 +39,7 @@
   background: #8bc34a;
   color: white;
   text-shadow: 0.5px 1px black;
-  margin: auto 10px;
+  margin: 10px;
   font-size: 21px;
 }
 
@@ -189,7 +213,7 @@ input[type="submit"]:hover {
   margin: auto;
 }
 .farm-video-2-container video {
-  width: 100%;
+  width: 80%;
   margin: auto;
   display: block;
 }
@@ -272,7 +296,7 @@ input[type="submit"]:hover {
 }
 /* Our products section styling */
 .knowUs-section-container {
-  margin-top: 100px;
+  margin:100px auto;
 }
 .product-section-container-list,
 .knowUs-section-container-list {
@@ -542,6 +566,7 @@ input[type="submit"]:hover {
 }
 .gallery-item img,
 .gallery-item-2 img,
+.gallery-item-3 img,
 .gallery-farm-video {
   display: block;
   margin: 20px auto;
@@ -612,7 +637,7 @@ input[type="submit"]:hover {
     width: 100%;
   }
   .farm-video-2-container video {
-    width: 70%;
+    width: 50%;
   }
 
   .text-style-1 {
@@ -746,13 +771,15 @@ input[type="submit"]:hover {
     height: 480px;
   }
   .gallery-item,
-  .gallery-item-2 {
+  .gallery-item-2,
+  .gallery-item-3 {
     grid-template-columns: 28% 28% 28%;
     justify-content: center;
   }
 
   .gallery-item img,
   .gallery-item-2 img,
+  .gallery-item-3 img,
   .gallery-farm-video {
     display: flex;
     width: 95%;
@@ -764,6 +791,11 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 820px) {
+  .buttons-container button{
+    width: 150px;
+    height: 150px;
+    font-size: 35px;
+  }
   .knowUs-section-container-list {
     text-align: center;
     justify-content: center;
@@ -813,7 +845,7 @@ input[type="submit"]:hover {
     height: 600px;
   }
   .farm-video-2-container video {
-    width: 50%;
+    width: 40%;
   }
 
   .heading-style-1,
@@ -821,7 +853,12 @@ input[type="submit"]:hover {
     font-size: 40px;
   }
   .text-style-1 {
-    font-size: 24px;
+    font-size: 29px;
+  }
+  .textWatchHow{
+font-size: 40px;
+margin-left: 100px;
+margin-right: 100px;
   }
   .product-section-container-list h3 {
     width: fit-content;
@@ -916,7 +953,7 @@ input[type="submit"]:hover {
     transform: skew(242deg, 0deg);
   }
   .farm-video-2-container video {
-    width: 25%;
+    width: 28%;
   }
 }
 
