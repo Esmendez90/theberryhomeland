@@ -7,6 +7,10 @@
   font-weight: 500;
   text-shadow: 0.5px 0.5px black;
 }
+.nav-item .nav-link:hover, .navbar-nav .nav-link.active:hover {
+  text-shadow: 1px 1px black;
+  color: rgb(252, 164, 1);
+}
 #abaca-container {
   background: url(./images/IMG-20240812-WA0083.jpg);
 }
@@ -259,7 +263,7 @@ input[type="submit"]:hover {
 }
 .slogan-text {
   background-color: transparent;
-  color: black;
+  color: #357b37;;
   padding: 20px;
   margin: 100px auto 50px;
   text-align: center;
@@ -727,7 +731,7 @@ input[type="submit"]:hover {
     background-color: rgb(23 22 22 / 0%);
   }
   .slogan-text h1 {
-    font-size: 31px;
+    font-size: 40px;
   }
   .slogan-text h5 {
     text-align: center;
