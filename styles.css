@@ -1,3 +1,12 @@
+.navbar-toggler {
+  color: white;
+  border: none;
+}
+.nav-item .nav-link, .navbar-nav .nav-link.active {
+  color: white;
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px black;
+}
 #abaca-container {
   background: url(./images/IMG-20240812-WA0083.jpg);
 }
@@ -55,10 +64,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #031804d3;
+  background-size: 220px;
   opacity: 1;
 }
 .background-logo {
   background-color: transparent;
+  background-size: 130px;
   z-index: -3;
   opacity: 0.2;
   top: 35%;
@@ -119,6 +130,7 @@ input[type="submit"]:hover {
 }
 
 .bg-body-tertiary {
+  background-image: linear-gradient(45deg, black, #357b37, #4cb14f);
   background-color: white !important;
 }
 .logo-name-text {
