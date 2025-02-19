@@ -2,12 +2,14 @@
   color: white;
   border: none;
 }
-.nav-item .nav-link, .navbar-nav .nav-link.active {
+.nav-item .nav-link,
+.navbar-nav .nav-link.active {
   color: white;
   font-weight: 500;
   text-shadow: 0.5px 0.5px black;
 }
-.nav-item .nav-link:hover, .navbar-nav .nav-link.active:hover {
+.nav-item .nav-link:hover,
+.navbar-nav .nav-link.active:hover {
   text-shadow: 1px 1px black;
   color: rgb(252, 164, 1);
 }
@@ -64,10 +66,10 @@
   width: 100%;
   height: 100%;
   z-index: 2;
-  background: url(./images/berryhomeland-logo-4-removebg.png);
+  background: url(./images/123.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #031804d3;
+  background-color: #031804;
   background-size: 220px;
   opacity: 1;
 }
@@ -134,7 +136,7 @@ input[type="submit"]:hover {
 }
 
 .bg-body-tertiary {
-  background-image: linear-gradient(45deg, black, #357b37, #4cb14f);
+  background-image: linear-gradient(45deg, black 13%, #357b37, #4cb14f);
   background-color: white !important;
 }
 .logo-name-text {
@@ -178,7 +180,8 @@ input[type="submit"]:hover {
   font-size: 20px;
 }
 .navbar-anchor-tag {
-  width: 24%;
+  width: 38%;
+  margin-left: 10px;
   margin-right: 0;
   padding: 0;
 }
@@ -218,7 +221,7 @@ input[type="submit"]:hover {
   opacity: 1;
   position: absolute;
   right: auto;
-  top: 45%;
+  top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   transition: opacity 1.5s;
@@ -229,7 +232,7 @@ input[type="submit"]:hover {
   margin: auto;
 }
 .farm-video-2-container video {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: block;
 }
@@ -241,9 +244,11 @@ input[type="submit"]:hover {
   transform: translate(-50%, -50%);
   color: white;
   display: block;
-  padding: 40px;
+  padding: 55% 30px;
   z-index: 1;
   width: 100%;
+  background-color: #00000036;
+  height: 100%;
   opacity: 0;
   visibility: hidden;
 }
@@ -255,15 +260,17 @@ input[type="submit"]:hover {
 
 .intro-text h1,
 .intro-text h3 {
-  text-shadow: 1px 1px black;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.797);
+  font-weight: bold;
 }
 .intro-text h1 {
   font-size: 35px;
   margin-bottom: 20px;
+  
 }
 .slogan-text {
   background-color: transparent;
-  color: #357b37;;
+  color: #357b37;
   padding: 20px;
   margin: 100px auto 50px;
   text-align: center;
@@ -290,7 +297,7 @@ input[type="submit"]:hover {
     Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 .mission-container .text-style-1 {
-  background-color: white;
+  background-color: transparent;
 }
 
 .mission-image-container,
@@ -312,7 +319,7 @@ input[type="submit"]:hover {
 }
 /* Our products section styling */
 .knowUs-section-container {
-  margin:100px auto;
+  margin: 100px auto;
 }
 .product-section-container-list,
 .knowUs-section-container-list {
@@ -342,7 +349,7 @@ input[type="submit"]:hover {
   display: grid;
 }
 .abaca-button {
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 0.142857em;
   line-height: 1.4;
   text-transform: uppercase;
@@ -356,11 +363,13 @@ input[type="submit"]:hover {
   text-decoration: none;
   transition: none 0.3s ease;
   transition-property: background, border-color, color;
-  margin: 20px auto;
+  margin: 100px auto 20px;
   display: flex;
   color: white;
-  background-image: linear-gradient(45deg, black, #357b37, #357b37, #4cb14f);
-  text-shadow: 1px 1px black;
+  border: 3px solid;
+  /* background-image: linear-gradient(45deg, black, #357b37, #357b37, #4cb14f); */
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.797);
+  font-size: 17px;
 }
 .abaca-button:hover {
   color: rgb(252, 164, 1);
@@ -633,7 +642,8 @@ input[type="submit"]:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .navbar-anchor-tag {
-    width: 15%;
+    width: 18%;
+    margin-left: 30px;
   }
   .home-video {
     height: 100%;
@@ -647,7 +657,13 @@ input[type="submit"]:hover {
     transform: none;
     -webkit-transform: none;
   }
-
+  
+  .intro-text {
+    padding: 25% 30px 10px;
+  }
+  .abaca-button {
+    margin: 70px auto 20px;
+  }
   .background-img-item img {
     margin: auto;
     width: 100%;
@@ -722,10 +738,10 @@ input[type="submit"]:hover {
   }
 
   .intro-text h1 {
-    font-size: 31px;
+    font-size: 38px;
   }
   .intro-text h3 {
-    font-size: 19px;
+    font-size: 23px;
   }
   .slogan-text {
     background-color: rgb(23 22 22 / 0%);
@@ -807,7 +823,7 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 820px) {
-  .buttons-container button{
+  .buttons-container button {
     width: 150px;
     height: 150px;
     font-size: 35px;
@@ -835,11 +851,12 @@ input[type="submit"]:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .navbar-anchor-tag {
-    width: 9%;
+    width: 16%;
+    margin-left: 50px;
   }
-  .bg-body-tertiary {
+  /* .bg-body-tertiary {
     padding-bottom: 0;
-  }
+  } */
   .navbar-nav {
     height: auto;
     text-align: center;
@@ -851,7 +868,7 @@ input[type="submit"]:hover {
     align-items: right;
   }
   .nav-item {
-    font-size: 12px;
+    font-size: 15px;
   }
   .navbar-nav > .nav-item:not(:last-child) {
     margin-right: 15px;
@@ -861,7 +878,7 @@ input[type="submit"]:hover {
     height: 600px;
   }
   .farm-video-2-container video {
-    width: 40%;
+    width: 32%;
   }
 
   .heading-style-1,
@@ -871,10 +888,10 @@ input[type="submit"]:hover {
   .text-style-1 {
     font-size: 29px;
   }
-  .textWatchHow{
-font-size: 40px;
-margin-left: 100px;
-margin-right: 100px;
+  .textWatchHow {
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .product-section-container-list h3 {
     width: fit-content;
@@ -922,17 +939,41 @@ margin-right: 100px;
     font-size: 24px;
   }
 
-  .qrCode-img {
-    width: 30%;
-  }
   .product .text-style-3 {
     font-size: initial;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .intro-text {
+    padding: 23% 30px 10px;
+}
+  .intro-text h1 {
+    font-size: 50px;
+}
+.intro-text h3 {
+  font-size: 30px;
+}
+.home-video{
+  height: 550px;
+}
+.slogan-text{
+  margin: 30px auto;
+}
+}
 @media only screen and (min-width: 1160px) {
-  .nav-item {
-    font-size: 13px;
+  .navbar-anchor-tag {
+    width: 10%;
+    margin-left: 90px;
   }
+  .nav-item {
+    font-size: 16px;
+  }
+
+.intro-text {
+  padding: 12% 30px 10px;
+}
+
   .product-section-img-container {
     height: 240px;
   }
@@ -969,7 +1010,7 @@ margin-right: 100px;
     transform: skew(242deg, 0deg);
   }
   .farm-video-2-container video {
-    width: 28%;
+    width: 22%;
   }
 }
 
