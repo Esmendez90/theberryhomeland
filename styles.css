@@ -247,7 +247,7 @@ input[type="submit"]:hover {
   padding: 55% 30px;
   z-index: 1;
   width: 100%;
-  background-color: #00000036;
+  /* background-color: #00000036; */
   height: 100%;
   opacity: 0;
   visibility: hidden;
@@ -1006,6 +1006,12 @@ input[type="submit"]:hover {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .navbar-anchor-tag {
+    width: 7%
+  }
+  .home-video {
+    height: 650px;
+}
   .wave {
     transform: skew(242deg, 0deg);
   }
