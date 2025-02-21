@@ -303,6 +303,7 @@ input[type="submit"]:hover {
 }
 .mission-container .text-style-1 {
   background-color: transparent;
+  color: black;
 }
 
 .mission-image-container,

@@ -4,7 +4,8 @@ const elements = document.querySelectorAll(".display-element");
 const abacaBtn = document.getElementById("abaca-container");
 const coffeeBtn = document.getElementById("coffee-container");
 const cacaoBtn = document.getElementById("cacao-container");
-
+const contactBtn = document.getElementById("contact-us");
+const contactBtn1 = document.getElementById("contact-us-1");
 const abacaPhotosContainer = document.getElementsByClassName("gallery-item");
 const coffeePhotosContainer = document.getElementsByClassName("gallery-item-2");
 const cacaoPhotosContainer = document.getElementsByClassName("gallery-item-3");
@@ -36,6 +37,17 @@ if (cacaoBtn) {
   });
 }
 
+if (contactBtn || contactBtn1) {
+  contactBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo(0, 5500, document.body.scrollHeight);
+  });
+  contactBtn1.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo(0, 5500, document.body.scrollHeight);
+  });
+}
+
 if (preLoaderImg && introTextFadeIn) {
   function preloaderFunction() {
     $(preLoaderImg[0]).addClass("fade-out");
@@ -59,3 +71,4 @@ window.addEventListener("scroll", () => {
 });
 
 window.onload = preloaderFunction;
+
