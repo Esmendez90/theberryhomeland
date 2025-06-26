@@ -96,7 +96,7 @@ body {
   transition: visibility 0s 2s ease-in-out, opacity 2s ease-in-out;
 }
 
-innput[type="text"],
+input[type="text"],
 select,
 textarea {
   width: 100%;
